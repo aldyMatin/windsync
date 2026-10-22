@@ -1,0 +1,27 @@
+# Binary hanya diunggah sebagai GitHub Release assets.
+*.exe
+*.msi
+*.msix
+*.apk
+*.aab
+*.zip
+*.dll
+*.so
+*.pdb
+*.symbols
+*.jks
+*.keystore
+*.pem
+*.key
+*.db
+*.db-*
+*.wsbackup
+.env*
+key.properties
+google-services.json
+firebase_options.dart
+node_modules/
+build/
+dist/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,23 @@
+name: Usulan fitur
+description: Jelaskan kebutuhan dan manfaat fitur.
+title: '[Fitur] '
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Masalah yang ingin diselesaikan
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Perilaku yang diharapkan
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatif dan platform yang membutuhkan
+  - type: markdown
+    attributes:
+      value: 'Usulan tidak menjamin implementasi atau jadwal. Jangan menyertakan data pribadi/server asli.'

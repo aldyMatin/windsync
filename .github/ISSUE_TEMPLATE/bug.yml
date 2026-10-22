@@ -1,0 +1,54 @@
+name: Laporan bug
+description: Laporkan masalah yang dapat direproduksi tanpa menyertakan rahasia.
+title: '[Bug] '
+body:
+  - type: markdown
+    attributes:
+      value: 'Laporan ini PUBLIK. Hapus password, key, token, alamat server sensitif, dan data pribadi. Kerentanan dilaporkan lewat SECURITY.md.'
+  - type: input
+    id: version
+    attributes:
+      label: Versi/build WindSync
+      placeholder: Salin dari aplikasi atau nama rilis
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Windows x64
+        - Android ARM64
+        - Android x86_64
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Versi OS dan perangkat
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Langkah reproduksi
+      description: Gunakan contoh fiktif untuk host, akun, dan file sensitif.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Hasil yang diharapkan dan hasil aktual
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Pesan error atau screenshot yang sudah disensor
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Pemeriksaan privasi
+      options:
+        - label: Saya telah menghapus credential, token, backup, dan data sensitif dari laporan ini.
+          required: true
